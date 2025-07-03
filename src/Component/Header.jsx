@@ -12,8 +12,8 @@ const Header = () => {
         <p className='pl-5 text-gray-500'>Spreadsheet </p>
         <div className='pr-5 flex items-center gap-2'>
            
-             <div className='relative flex items-center '>
-                <Search className='absolute size-5 pl-1 text-gray-500'/>
+             <div className='relative flex items-center rounded bg-gray-100 '>
+                <Search className='absolute size-5 pl-1  text-gray-500'/>
 <input type="search" name="search" id="" placeholder='Search Within Sheet' className='text-[10px] border pl-5 py-1'/>
 
              </div>

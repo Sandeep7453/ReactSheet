@@ -12,7 +12,7 @@ import { Split } from 'lucide-react';
 
 const Tab = ( ) => {
   return (
-    <div className='h-[5vh] bg-gray-300 flex items-center justify-between border-t-2 pl-2'>
+    <div className='h-[5vh] bg-gray-300 flex items-center justify-between border-t-1 pl-2'>
       <div className='flex'>
       <TabsButton label = "Tool Bar" className="mr-2 border-r-2" icon={<ChevronsRight className='h-4 '/>} iconPosition="right" onClick={() => alert("ToolBar Clicked")}  />
       <TabsButton label ="Hide Field" className="mr-2" icon={<EyeOff className='h-3' />} onClick={()=>alert("Hide Field")} />
