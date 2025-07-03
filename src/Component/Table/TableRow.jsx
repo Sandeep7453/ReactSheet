@@ -1,5 +1,12 @@
 import React from 'react';
 import Data from './Data';
+import { BriefcaseBusiness } from 'lucide-react';
+import { Captions } from 'lucide-react';
+import { User } from 'lucide-react';
+import { Clock12 } from 'lucide-react';
+import { Globe } from 'lucide-react';
+import { Hand } from 'lucide-react';
+
 
 const TableRow = () => {
   const Total_Row = 100;
@@ -9,14 +16,14 @@ const TableRow = () => {
       {/* Header Table */}
       <table className="w-full border-collapse">
         <thead className="bg-gray-700 text-white">
-          <tr className="border-b border-gray-300 text-sm">
+          <tr className="border-b border-gray-300 text-sm flex">
             <th className="w-8 pl-2 text-left border-r">#</th>
-            <th className="w-64 pl-2 text-left border-r">Job Request</th>
-            <th className="w-24 pr-2 text-right border-r">Submitted</th>
-            <th className="w-32 text-center border-r">Status</th>
-            <th className="w-28 text-left pl-2 border-r">Submitter</th>
-            <th className="w-36 text-center border-r">URL</th>
-            <th className="w-20 pl-1 text-left border-r">Assigned</th>
+            <th className="w-64 pl-2 text-left border-r flex items-center"> <BriefcaseBusiness  className= "h-3 "/> Job Request</th>
+            <th className="w-24 pr-2  border-r  flex items-center">  <Captions className="h-3" />Submitted</th>
+            <th className="w-32  border-r  flex items-center  ">     <Clock12 className="h-3" />Status</th>
+            <th className="w-28 text-left pl-2 border-r">     <User className="h-3" /> Submitter</th>
+            <th className="w-36 text-center border-r">   <Globe  className="h-3"/>URL</th>
+            <th className="w-20 pl-1 text-left border-r">  <Hand className ="h-3"/> Assigned</th>
             <th className="w-24 pl-1 text-center border-r">Priority</th>
             <th className="w-20 pl-1 text-left border-r">Due Date</th>
             <th className=" text-center border-r">Est. Value</th>
